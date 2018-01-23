@@ -56,9 +56,13 @@ springmvc-servlet.xml引入配置
 2、分析文件<br>
 
 获取数据
+
 grep 'TimeConsumer \[uri=' /data2/log/resin/stdout.log >aa.txt
+
 分析数据
+
 java -cp "D:\maven-repository\com\dengqin\util\time-spend-parser\1.0\time-spend-parser-1.0-SNAPSHOT.jar" "com.dengqin.util.timespend.Parser" "d:/aa.txt" >d:result.txt
+
 文件输出示例
 
 [2013-03-04 18:12:20,263] [] [INFO ] <com.dengqin.util.timespend.TimeParser> - TimeConsumer [uri=/client/getCode.do, allUseTime=14,params={callback=234}, startTime=1362391940249, timeSpend=[CodeGroupService_getCodeGroup_start:1, CodeGroupDao_getCodeGroup_start:2, CodeGroupDao_getCodeGroup_end:5, CodeGroupService_getCodeGroup_end:7, CodeService_getCodeByUid_start:9, CodeDao_getCodeByUid_start:10, CodeDao_getCodeByUid_end:12, CodeService_getCodeByUid_end:14]](TimeParser.java:end:64)

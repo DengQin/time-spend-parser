@@ -41,6 +41,7 @@ springmvc-servlet.xml引入配置
         </bean>
 
 === 1.2 thrift接口 ===
+
                 TimeParser.init("方法名");
                 TimeParser.start();
                 方法的执行
